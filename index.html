@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historia del Golf</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #dfe9f3, #ffffff);
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 1.5s ease-in;
+    }
+    header {
+      background-color: #1abc9c;
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+      animation: slideDown 1s ease-out;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #16a085;
+    }
+    .tarjeta {
+      background-color: #ecf0f1;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease-in;
+    }
+    .tarjeta:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .golfistas-img {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .golfista {
+      text-align: center;
+      max-width: 120px;
+    }
+    .golfista img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .golfista p {
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #1abc9c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Historia del Golf</h1>
+    <p>Un recorrido por uno de los deportes más antiguos y elegantes del mundo</p>
+  </header>
+
+  <section>
+    <div class="tarjeta">
+      <h2>¿Quién inventó el golf?</h2>
+      <p>El golf, tal como lo conocemos hoy, se originó en Escocia durante el siglo XV. Aunque existen antecedentes de juegos similares en China (el juego llamado chuiwan) o en los Países Bajos, fue en Escocia donde se popularizó y se establecieron las primeras reglas. El rey Jacobo II incluso prohibió el golf en 1457 porque distraía a los soldados de su práctica de tiro con arco.</p>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Los mejores golfistas de la historia</h2>
+      <ul>
+        <li><strong>Tiger Woods</strong>: uno de los más influyentes y exitosos, con 15 majors.</li>
+        <li><strong>Jack Nicklaus</strong>: considerado el más grande por muchos, con 18 majors.</li>
+        <li><strong>Arnold Palmer</strong>: figura legendaria que popularizó el golf en EE.UU.</li>
+        <li><strong>Seve Ballesteros</strong>: español carismático, revolucionó el golf europeo.</li>
+      </ul>
+      <div class="golfistas-img">
+        <div class="golfista">
+          <img src="https://cdn.britannica.com/48/223048-050-3AAA8EB6/Golfer-Tiger-Woods-Masters-Augusta-Georgia-2019.jpg" alt="Tiger Woods">
+          <p>Tiger Woods<br>Nacido: 30 dic 1975<br>Edad: 48</p>
+        </div>
+        <div class="golfista">
+          <img src="https://www.edventureblog.com/wp-content/uploads/2022/04/Jack-e1651101963269.jpg" alt="Jack Nicklaus">
+          <p>Jack Nicklaus<br>Nacido: 21 ene 1940<br>Edad: 85</p>
+        </div>
+        <div class="golfista">
+          <img src="https://www.a-alvarez.com/img/ybc_blog/post/arnold-palmer.jpg" alt="Arnold Palmer">
+          <p>Arnold Palmer<br>1939–2016</p>
+        </div>
+        <div class="golfista">
+          <img src="https://images.ecestaticos.com/TxwQ2Htpy_1OCjBUWzCxJroot-o=/0x0:2272x1413/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F4fa%2F13e%2F9ff%2F4fa13e9ff256b244b040641d8bbe77ce.jpg" alt="Seve Ballesteros">
+          <p>Seve Ballesteros<br>1957–2011</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Premios y recompensas</h2>
+      <p>Los torneos de golf reparten millones de dólares. Por ejemplo, el <strong>Masters de Augusta</strong> ofrece más de 3 millones de dólares al ganador, además de la famosa <strong>chaqueta verde</strong>. También se otorgan trofeos como la <strong>Claret Jug</strong> (en The Open) y el <strong>Trofeo Wanamaker</strong> (en el PGA Championship).</p>
+      <ul>
+        <li><strong>Masters de Augusta</strong> - Último ganador: Scottie Scheffler (2024). Se juega en abril.</li>
+        <li><strong>U.S. Open</strong> - Último ganador: Bryson DeChambeau (2024). Se juega en junio.</li>
+        <li><strong>The Open Championship</strong> - Último ganador: Brian Harman (2023). Se juega en julio.</li>
+        <li><strong>PGA Championship</strong> - Último ganador: Xander Schauffele (2024). Se juega en mayo.</li>
+        <li><strong>Ryder Cup</strong> - Último ganador: Europa (2023). Se juega cada dos años (próxima en 2025).</li>
+      </ul>
+      <div class="golfistas-img">
+        <div class="golfista">
+          <img src="https://www.golfconfidencial.com/wp-content/uploads/2023/12/Scottie.jpg" alt="Scottie Scheffler">
+          <p>Scottie Scheffler<br>Ganador Masters 2024</p>
+        </div>
+        <div class="golfista">
+          <img src="https://lh4.googleusercontent.com/proxy/U9_uS6rbDz6dtKYEW78vjz6tni_ATzmVECu8wWarqUTFkL1dIJwrNLTN1jCvICgKYrt0OxJdpLSuhsnymwICp5rhecNS4Lh89jbxmXlY62MXKf70TpRW8W12oHA1" alt="Bryson DeChambeau">
+          <p>Bryson DeChambeau<br>Ganador U.S. Open 2024</p>
+        </div>
+        <div class="golfista">
+          <img src="https://ten-golf.com/wp-content/uploads/2025/01/schauffelesentryprevia.webp" alt="Xander Schauffele">
+          <p>Xander Schauffele<br>Ganador PGA 2024</p>
+        </div>
+        <div class="golfista">
+          <img src="https://ichef.bbci.co.uk/ace/standard/2560/cpsprodpb/294d/live/ed77e550-a85c-11ef-8ab9-9192db313061.jpg" alt="Brian Harman">
+          <p>Brian Harman<br>Ganador The Open 2023</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2>Torneos más importantes del mundo</h2>
+      <ul>
+        <li><strong>The Masters (EE.UU.)</strong>: se juega en Augusta National cada abril. Último ganador: Scottie Scheffler (2024).</li>
+        <li><strong>U.S. Open</strong>: uno de los más difíciles, se juega desde 1895 en junio. Último ganador: Bryson DeChambeau (2024).</li>
+        <li><strong>The Open Championship</strong>: el torneo más antiguo, nacido en 1860 en Escocia. Se juega en julio. Último ganador: Brian Harman (2023).</li>
+        <li><strong>PGA Championship</strong>: otro de los cuatro majors, con alta competitividad. Se celebra en mayo. Último ganador: Xander Schauffele (2024).</li>
+        <li><strong>Ryder Cup</strong>: competencia entre Europa y EE.UU. cada dos años. Último ganador: Europa (2023). Próxima edición: 2025.</li>
+      </ul>
+      <div
+      <div class="golfistas-img">
+      <div class="golfista"> 
+      <img src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2149434126.jpg?c=16x9&q=h_833,w_1480,c_fill" alt="Scottie Scheffler" />
+      <p>Scottie Scheffler<br>Nacido: 21 junio 1996</p>
+    </div>
+    <div class="golfista">
+      <img src="https://www.news10.com/wp-content/uploads/sites/64/2025/05/68279969203bd8.21965787.jpeg" alt="Bryson DeChambeau" />
+      <p>Bryson DeChambeau<br>Nacido: 16 septiembre 1993</p>
+    </div>
+    <div class="golfista">
+      <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2024-11/241121-Brian-Harman-vl-146p-c6ec0f.jpg" alt="Brian Harman" />
+      <p>Brian Harman<br>Nacido: 19 enero 1987</p>
+    </div>
+    <div class="golfista">
+      <img src="https://golfshot.mx/wp-content/uploads/2024/10/mr-x-2.jpg" alt="Xander Schauffele" />
+      <p>Xander Schauffele<br>Nacido: 25 octubre 1993</p>
+    </div>
+  </div>
+</div>
+
+    <div class="tarjeta">
+      <h2>Curiosidades y evolución del golf</h2>
+      <p>En sus inicios, las pelotas de golf eran de madera, luego pasaron a ser de cuero relleno de plumas. Hoy en día están hechas con materiales sintéticos y de alta tecnología. Los campos de golf también han evolucionado, con diseños emblemáticos como St. Andrews (Escocia), Pebble Beach (EE.UU.) o Valderrama (España).</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Historia del Golf - por crac</p>
+  </footer>
+</body>
+</html>
